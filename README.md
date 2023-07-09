@@ -1,1 +1,2 @@
 # redmine_template
+test
