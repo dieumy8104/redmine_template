@@ -5,59 +5,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redmine Template</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="bootstrap-5.3.0-alpha2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-    <section class="section-login-page">
-        <div class="section-login-page-container">
-            <section class="section-login-page-heading">
-                <div class="section-login-page-heading-login">
-                    <span class="section-login-page-heading-login-span">
-                        Đăng nhập
-                    </span>
-                </div>
-            </section>
-            <section class="section-login-page-heading-logo">
-                <span class="section-login-page-heading-logo-span">
-                    Redmine
-                </span>
-            </section>
-            <section class="section-login-page-form">
-                    <div class="section-login-page-form-login">
-                        <div class="section-login-page-form-login-account">
-                            <p class="section-login-page-form-login-account-title">
-                                Đăng nhập
-                            </p>
-                            <input class="section-login-page-form-login-account-input" type="text">
-                        </div>
-                        <div class="section-login-page-form-login-password">
-                            <p class="section-login-page-form-login-password-title ">
-                                Mật khẩu
-                                <a class="float-end text-decoration-none fw-normal" href="#!">
-                                    Phục hồi mật mã
-                                </a>
-                            </p>
-                            <input class="section-login-page-form-login-password-input" type="text">
-                        </div>
-                        <div class="section-login-page-form-login-button">
-                            <button type="button" class="btn btn-primary">
-                                Đăng nhập
-                            </button>
-                        </div>
-                    </div>     
-            </section>
-            <section class="section-login-page-footer">
-                <hr style="margin: 20px 30px">
-                <p class="section-login-page-footer-information">
-                    Powered by 
-                    <a class="text-decoration-none" href="#!">
-                        Bitnami Redmine Stack
-                    </a>
-                    © 2006-2021 Jean-Philippe Lang
+    <section class="section-login-page-heading">
+        <div class="section-login-page-heading-login col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <span class="section-login-page-heading-login-span">
+                Đăng nhập
+            </span>
+        </div>
+    </section>
+    <section class="section-login-page-heading-logo">
+        <div class="section-login-page-heading-logo-menu">
+            <span class="section-login-page-heading-logo-menu-span">
+                Redmine
+            </span>
+            <button class="section-login-page-heading-logo-menu-button" data-bs-toggle="collapse" data-bs-target="#collapseSideBar" aria-expanded="false" aria-controls="collapseSideBar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
+        </div>
+    </section>
+    <section class="section-login-page-form">
+        <div class="section-login-page-form-login">
+            <div class="section-login-page-form-login-account">
+                <p class="section-login-page-form-login-account-title">
+                    Đăng nhập
                 </p>
-            </section>
+                <input class="section-login-page-form-login-account-input" type="text" style="width: 100%;height: 30px;border: 1px solid rgba(224, 224, 224, 0.856)">
+            </div>
+            <div class="section-login-page-form-login-password">
+                <p class="section-login-page-form-login-password-title">
+                    Mật khẩu
+                    <a class="float-end text-decoration-none fw-normal" href="#!">
+                        Phục hồi mật mã
+                    </a>
+                </p>
+                <input class="section-login-page-form-login-password-input" type="text" style="width: 100%;height: 30px;border: 1px solid rgba(224, 224, 224, 0.856)">
+            </div>
+            <div class="section-login-page-form-login-button">
+                <button type="button" class="btn btn-primary">
+                    Đăng nhập
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="section-login-page-footer">
+        <hr style="margin: 20px 30px">
+        <p class="section-login-page-footer-information">
+            Powered by
+            <a class="text-decoration-none" href="#!">
+                Bitnami Redmine Stack
+            </a>
+            © 2006-2021 Jean-Philippe Lang
+        </p>
+    </section>
+    <section class="section-login-page-heading-login-menu">
+        <div class="section-login-page-heading-login-menu-sidebar collapse" id="collapseSideBar">
+            <ul class="section-login-page-heading-login-menu-sidebar-list float-end">
+                <li class="section-login-page-heading-login-menu-sidebar-list-item ">
+                    <a href="#!" style="text-overflow: clip">
+                        TỔNG QUAN
+                    </a>
+                </li>
+                <li class="section-login-page-heading-login-menu-sidebar-list-item">
+                    <a href="#!">
+                        HỒ SƠ
+                    </a>
+                </li>
+                <li class="section-login-page-heading-login-menu-sidebar-list-item">
+                    <a href="#!">
+                        Đăng nhập
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="section-login-page-heading-login-menu-close">
+            <a href="" class="collapse section-login-page-heading-login-menu-close-sidebar" id="collapseSideBar">
+            </a>
         </div>
     </section>
 

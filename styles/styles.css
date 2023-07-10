@@ -1,0 +1,175 @@
+/* Create Login Page*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.section-login-page-heading {
+    width: 100%;
+    min-width: 320px;
+}
+
+.section-login-page-heading-login {
+    height: 30px;
+    background-color: rgba(158, 47, 6, 0.842);
+
+}
+
+.section-login-page-heading-login-span {
+    float: right;
+    color: #ccc;
+    font-size: 13px;
+    line-height: 30px;
+    margin-right: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.section-login-page-heading-logo {
+    background-color: rgba(255, 68, 0, 0.836);
+    height: 55px;
+    min-width: 320px;
+}
+
+
+.section-login-page-heading-login-menu-sidebar-list {
+    list-style: none;
+    width: 250px;
+    background-color: rgb(202, 56, 2);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.section-login-page-heading-login-menu-sidebar-list-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.section-login-page-heading-login-menu-sidebar-list-item:not(:last-child) {
+    background-color: rgb(0, 0, 80);
+    font-weight: 600;
+    padding: 5px 0 5px 10px;
+}
+
+.section-login-page-heading-login-menu-sidebar-list-item:last-child {
+    color: white;
+    padding: 5px 0 0 15px;
+}
+
+.section-login-page-heading-logo-menu-span {
+    color: white;
+    font-size: 30px;
+    line-height: 55px;
+    padding-left: 5px;
+    font-weight: 500;
+}
+
+.section-login-page-form {
+    max-width: 400px;
+    min-width: 320px;
+    margin: 70px auto 45px auto;
+}
+
+@media screen and (max-width: 479px) {
+    .section-login-page-heading-login {
+        display: none;
+    }
+
+    .section-login-page-heading-logo-menu-button {
+        border: none;
+        border-left: 1px solid white;
+        color: white;
+        background-color: transparent;
+        float: right;
+        line-height: 55px;
+        width: 60px;
+        display: block;
+    }
+
+    .section-login-page-form-login {
+        background-color: transparent;
+        border: none;
+        padding: 0 15px;
+    }
+
+    .section-login-page-form-login-account-input,
+    .section-login-page-form-login-password-input {
+
+        background-color: #f4f5f7;
+        border-radius: 2px;
+
+    }
+
+    .section-login-page-heading-login-menu {
+        min-width: 320px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .section-login-page-heading-login-menu {
+        display: none;
+    }
+
+    .section-login-page-heading-login {
+        display: block;
+    }
+
+    .section-login-page-heading-logo-menu-button {
+        display: none;
+    }
+
+    .section-login-page-form-login {
+        background-color: #f4f5f7;
+        border: 2px solid #eeeff0f6;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: rgba(185, 183, 183, 0.2) 0px 2px 5px 0px;
+    }
+
+    .section-login-page-form-login-account-input,
+    .section-login-page-form-login-password-input {
+
+        border-radius: 2px;
+    }
+}
+
+.section-login-page-form-login-password {
+    margin-top: 15px;
+}
+
+.section-login-page-form-login-account-title,
+.section-login-page-form-login-password-title {
+    font-weight: 500;
+    margin: 5px;
+}
+
+.section-login-page-form-login-button button {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 3px;
+}
+
+.section-login-page-footer {
+    min-width: 320px;
+}
+
+.section-login-page-footer-information {
+    padding-left: 30px;
+    font-size: 13px;
+    color: #ccc;
+}
+
+.section-login-page-heading-login-menu-close-sidebar {
+    height: 100vh;
+    width: calc(100% - 250px);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* End Create Login Page */
