@@ -4,6 +4,7 @@
     padding: 0;
 }
 
+/* Section Login Page Heading */
 .section-login-page-heading {
     width: 100%;
     min-width: 320px;
@@ -11,7 +12,7 @@
 
 .section-login-page-heading-login {
     height: 30px;
-    background-color: rgba(158, 47, 6, 0.842);
+    background-color: hsl(17.2deg 65.3% 42.94%);
 
 }
 
@@ -25,13 +26,54 @@
     cursor: pointer;
 }
 
+/* End Section Login Page Heading*/
+/* Section Login Page Heading Logo */
 .section-login-page-heading-logo {
-    background-color: rgba(255, 68, 0, 0.836);
+    background-color: hsl(24deg 100% 50%);
     height: 55px;
     min-width: 320px;
 }
 
+.section-login-page-heading-logo-menu-span {
+    color: white;
+    font-size: 30px;
+    line-height: 55px;
+    padding-left: 15px;
+    font-weight: 500;
+}
 
+/* End Section Login Page Heading Login */
+/* Section Login Page Form */
+.section-login-page-form-login-password {
+    margin-top: 15px;
+}
+
+.section-login-page-form-login-account-title,
+.section-login-page-form-login-password-title {
+    font-weight: 500;
+    margin: 5px;
+}
+
+.section-login-page-form-login-button button {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 3px;
+}
+
+/* End Section Login Page Form */
+/* Section Login Page Footer */
+.section-login-page-footer {
+    min-width: 320px;
+}
+
+.section-login-page-footer-information {
+    padding-left: 30px;
+    font-size: 13px;
+    color: #ccc;
+}
+
+/* End Section Login Page Footer */
+/* Section Login Page Heading Login Menu */
 .section-login-page-heading-login-menu-sidebar-list {
     list-style: none;
     width: 250px;
@@ -42,6 +84,14 @@
     position: absolute;
     right: 0;
     top: 0;
+}
+
+.section-login-page-heading-login-menu-close-sidebar {
+    height: 100vh;
+    width: calc(100% - 250px);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .section-login-page-heading-login-menu-sidebar-list-item a {
@@ -61,21 +111,15 @@
     padding: 5px 0 0 15px;
 }
 
-.section-login-page-heading-logo-menu-span {
-    color: white;
-    font-size: 30px;
-    line-height: 55px;
-    padding-left: 5px;
-    font-weight: 500;
-}
-
-.section-login-page-form {
-    max-width: 400px;
-    min-width: 320px;
-    margin: 70px auto 45px auto;
-}
-
+/* End Section Login Page Heading Login Menu */
+/* For Mobile Phone Devices */
 @media screen and (max-width: 479px) {
+    .section-login-page-form {
+        width: 32%;
+        min-width: 300px;
+        margin: 40px auto 40px auto;
+    }
+    
     .section-login-page-heading-login {
         display: none;
     }
@@ -99,10 +143,8 @@
 
     .section-login-page-form-login-account-input,
     .section-login-page-form-login-password-input {
-
         background-color: #f4f5f7;
         border-radius: 2px;
-
     }
 
     .section-login-page-heading-login-menu {
@@ -110,7 +152,14 @@
     }
 }
 
+/* For Tablets & PC Devices */
 @media screen and (min-width: 480px) {
+    .section-login-page-form {
+        width: 32%;
+        min-width: 300px;
+        margin: 85px auto 60px auto;
+    }
+    
     .section-login-page-heading-login-menu {
         display: none;
     }
@@ -124,8 +173,8 @@
     }
 
     .section-login-page-form-login {
-        background-color: #f4f5f7;
-        border: 2px solid #eeeff0f6;
+        background-color: hsl(210deg 20% 98.04%);
+        border: 1px solid hsl(233.33deg 20% 91.18%);
         padding: 20px;
         border-radius: 5px;
         box-shadow: rgba(185, 183, 183, 0.2) 0px 2px 5px 0px;
@@ -136,40 +185,6 @@
 
         border-radius: 2px;
     }
-}
-
-.section-login-page-form-login-password {
-    margin-top: 15px;
-}
-
-.section-login-page-form-login-account-title,
-.section-login-page-form-login-password-title {
-    font-weight: 500;
-    margin: 5px;
-}
-
-.section-login-page-form-login-button button {
-    width: 100%;
-    margin-top: 15px;
-    border-radius: 3px;
-}
-
-.section-login-page-footer {
-    min-width: 320px;
-}
-
-.section-login-page-footer-information {
-    padding-left: 30px;
-    font-size: 13px;
-    color: #ccc;
-}
-
-.section-login-page-heading-login-menu-close-sidebar {
-    height: 100vh;
-    width: calc(100% - 250px);
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 /* End Create Login Page */
