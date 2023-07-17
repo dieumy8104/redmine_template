@@ -1,48 +1,93 @@
-/* Create Login Page*/
 * {
     margin: 0;
     padding: 0;
 }
 
-/* Section Login Page Heading */
-.section-login-page-heading {
+/* Section Heading */
+.section-heading {
     width: 100%;
     min-width: 320px;
 }
 
-.section-login-page-heading-login {
-    height: 30px;
-    background-color: hsl(17.2deg 65.3% 42.94%);
-
-}
-
-.section-login-page-heading-login-span {
-    float: right;
-    color: #ccc;
+.section-heading a {
+    color: #dfdbed;
+    text-decoration: none;
+    font-weight: 500;
     font-size: 13px;
     line-height: 30px;
-    margin-right: 20px;
-    font-weight: 500;
-    cursor: pointer;
 }
 
-/* End Section Login Page Heading*/
-/* Section Login Page Heading Logo */
-.section-login-page-heading-logo {
-    background-color: hsl(24deg 100% 50%);
+.section-heading a:hover {
+    color: #ebe9f4;
+}
+
+.section-heading-child {
+    height: 30px;
+    background-color: #b54f26;
+}
+
+.section-heading-child-list {
+    float: right;
+    margin-right: 20px;
+    list-style: none;
+}
+
+/* End Section Heading*/
+
+/* Section Heading Sidebar */
+.section-heading-sidebar {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.section-heading-sidebar-child-list {
+    list-style: none;
+    width: 250px;
+    background-color: #b54f26;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.section-heading-sidebar-child-list-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.section-heading-sidebar-child-list-item:not(:last-child) {
+    background-color: #000050;
+    font-weight: 600;
+    padding: 5px 0 5px 10px;
+}
+
+.section-heading-sidebar-child-list-item:last-child {
+    color: white;
+    padding: 5px 0 0 15px;
+}
+
+/* End Section Heading Sidebar */
+
+/* Section Heading Search */
+.section-heading-search {
+    background-color: #FF6600;
     height: 55px;
     min-width: 320px;
 }
 
-.section-login-page-heading-logo-menu-span {
-    color: white;
+.section-heading-search-menu-span {
     font-size: 30px;
     line-height: 55px;
     padding-left: 15px;
     font-weight: 500;
+    color: white;
 }
 
-/* End Section Login Page Heading Login */
+/* End Section Heading Search */
+
 /* Section Login Page Form */
 .section-login-page-form-login-password {
     margin-top: 15px;
@@ -54,77 +99,72 @@
     margin: 5px;
 }
 
+.section-login-page-form-login-password-title a {
+    float: right;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.section-login-page-form-login-password-title a:hover {
+    text-decoration: underline;
+}
+
 .section-login-page-form-login-button button {
     width: 100%;
     margin-top: 15px;
     border-radius: 3px;
+    border-color: #0065ff #0065ff #004dc2;
+    box-shadow: 0 1px 0 #004dc2
+}
+
+.section-login-page-form-login-account-input, .section-login-page-form-login-password-input {
+    width: 100%;
+    height: 28px;
+    border-radius: 2px;
+    border: 1px solid #d1d3e0;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .075);
 }
 
 /* End Section Login Page Form */
-/* Section Login Page Footer */
-.section-login-page-footer {
+
+/* Section Footer */
+.section-footer {
     min-width: 320px;
 }
 
-.section-login-page-footer-information {
+.section-footer-information {
     padding-left: 30px;
     font-size: 13px;
     color: #ccc;
 }
 
-/* End Section Login Page Footer */
-/* Section Login Page Heading Login Menu */
-.section-login-page-heading-login-menu-sidebar-list {
-    list-style: none;
-    width: 250px;
-    background-color: rgb(202, 56, 2);
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    position: absolute;
-    right: 0;
-    top: 0;
+.section-footer hr {
+    margin: 20px 30px;
 }
 
-.section-login-page-heading-login-menu-close-sidebar {
-    height: 100vh;
-    width: calc(100% - 250px);
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.section-login-page-heading-login-menu-sidebar-list-item a {
+.section-footer-information a {
     text-decoration: none;
-    color: white;
-    font-size: 14px;
 }
 
-.section-login-page-heading-login-menu-sidebar-list-item:not(:last-child) {
-    background-color: rgb(0, 0, 80);
-    font-weight: 600;
-    padding: 5px 0 5px 10px;
+.section-footer-information a:hover {
+    text-decoration: underline;
 }
 
-.section-login-page-heading-login-menu-sidebar-list-item:last-child {
-    color: white;
-    padding: 5px 0 0 15px;
-}
+/* End Section Footer */
 
-/* End Section Login Page Heading Login Menu */
 /* For Mobile Phone Devices */
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
     .section-login-page-form {
         width: 32%;
         min-width: 300px;
         margin: 40px auto 40px auto;
     }
-    
-    .section-login-page-heading-login {
+
+    .section-heading-child {
         display: none;
     }
 
-    .section-login-page-heading-logo-menu-button {
+    .section-heading-search-menu-button {
         border: none;
         border-left: 1px solid white;
         color: white;
@@ -144,47 +184,42 @@
     .section-login-page-form-login-account-input,
     .section-login-page-form-login-password-input {
         background-color: #f4f5f7;
-        border-radius: 2px;
     }
 
-    .section-login-page-heading-login-menu {
-        min-width: 320px;
+    .section-heading-sidebar {
+        display: none;
+        min-width: 250px;
     }
 }
 
 /* For Tablets & PC Devices */
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
     .section-login-page-form {
         width: 32%;
+        max-width: 340px;
         min-width: 300px;
-        margin: 85px auto 60px auto;
+        margin: 60px auto 60px auto;
     }
-    
-    .section-login-page-heading-login-menu {
+
+    .section-heading-sidebar {
         display: none;
     }
 
-    .section-login-page-heading-login {
+    .section-heading-child {
         display: block;
     }
 
-    .section-login-page-heading-logo-menu-button {
+    .section-heading-search-menu-button {
         display: none;
     }
 
     .section-login-page-form-login {
-        background-color: hsl(210deg 20% 98.04%);
-        border: 1px solid hsl(233.33deg 20% 91.18%);
-        padding: 20px;
-        border-radius: 5px;
-        box-shadow: rgba(185, 183, 183, 0.2) 0px 2px 5px 0px;
-    }
-
-    .section-login-page-form-login-account-input,
-    .section-login-page-form-login-password-input {
-
-        border-radius: 2px;
+        background-color: #F9FAFB;
+        border: 1px solid #dadce6;
+        padding: 15px;
+        border-radius: 4px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, .07), 0 3px 8px rgba(0, 0, 0, .04);
+        max-width: 400px;
+        margin: auto;
     }
 }
-
-/* End Create Login Page */
