@@ -4,10 +4,264 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redmine Template</title>
+    <link rel="stylesheet" href="css/fontawesome-6.4.0/css/all.min.css">
     <link rel="stylesheet" href="bootstrap-5.3.0-alpha2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles-mobile.css">
 </head>
 <body>
+    <!-- Section Heading -->
+    <section class="section-heading">
+        <div class="section-heading-child">
+            <div class="section-heading-child-left">
+                <ul class="section-heading-child-list">
+                    <li class="section-heading-child-list-item">
+                        <a href="#!">Home</a>
+                    </li>
+                    <li class="section-heading-child-list-item">
+                        <a href="#!">My page</a>
+                    </li>
+                    <li class="section-heading-child-list-item">
+                        <a href="#!">Projects</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="section-heading-child-right">
+                <ul class="section-heading-child-list">
+                    <li class="section-heading-child-list-item">
+                        <a href="#!">Sign out</a>
+                    </li>
+                    <li class="section-heading-child-list-item">
+                        <a href="#!">My account</a>
+                    </li>
+                    <li class="section-heading-child-list-item">
+                        <span>Logged in as</span>
+                        <a href="#">
+                            CuongVN
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <span class="section-heading-count-issues">0</span>
+    </section>
+    <!-- End Section Heading -->
 
+    <!-- Section Heading Sidebar -->
+    <section class="section-heading-sidebar">
+        <div class="section-heading-sidebar-child">
+            <ul class="section-heading-sidebar-child-list">
+                <li class="section-heading-sidebar-child-list-item ">
+                    <a href="#!" style="text-overflow: clip">
+                        TỔNG QUAN
+                    </a>
+                </li>
+                <li class="section-heading-sidebar-child-list-item">
+                    <a href="#!">
+                        HỒ SƠ
+                    </a>
+                </li>
+                <li class="section-heading-sidebar-child-list-item">
+                    <a href="#!">
+                        Đăng nhập
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- End Section Heading Sidebar -->
+
+    <!-- Section Heading Search -->
+    <section class="section-heading-search">
+        <span class="section-heading-search-logo d-none d-md-inline-block">
+            Redmine
+        </span>
+        <div class="section-heading-search-group">
+            <p>Search:</p>
+            <input class="section-heading-search-group-search-box">
+            <div class="section-heading-search-group-select-box">
+                <div class="section-heading-search-group-select-project">
+                    <p>Jump to a project...</p>
+                    <!-- icon for pc -->
+                    <i class="section-heading-search-select-open fa-solid fa-sort-down"></i>
+                    <i class="section-heading-search-select-close fa-solid fa-sort-up"></i>
+                    <!-- icon for mobile -->
+                    <i class="section-heading-search-select-mobile-open fa-solid fa-chevron-down "></i>
+                    <i class="section-heading-search-select-mobile-close fa-solid fa-chevron-up"></i>
+                </div>
+                <div class="section-heading-project-select">
+                    <div class="section-heading-project-select-box">
+                        <input type="text">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="section-heading-project-select-submenu">
+                        <ul class="select-heading-project-select-submenu-list">
+                            <li class="select-heading-project-select-submenu-item">
+                                Recenct used
+                            </li>
+                            <ul class="select-heading-project-select-submenu-list-child">
+                                <li class="select-heading-project-select-submenu-item-child">
+                                    <a href="#!">
+                                        SKG Aras Training
+                                    </a>
+                                </li>
+                                <li class="select-heading-project-select-submenu-item-child">
+                                    <a href="#!">
+                                        KAKEN
+                                    </a>
+                                </li>
+                            </ul>
+                            <li class="select-heading-project-select-submenu-item">
+                                All Projects
+                            </li>
+                            <ul class="select-heading-project-select-submenu-list-child">
+                                <li class="select-heading-project-select-submenu-item-child">
+                                    <a href="#!">
+                                        SKG Aras Training</a>
+                                </li>
+                                <li class="select-heading-project-select-submenu-item-child">
+                                    <a href="#!">
+                                        SKG.Support Center
+                                    </a>
+                                </li>
+                            </ul>
+                            <li class="select-heading-project-select-submenu-item">
+                                <a href="#!">All Project</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="section-heading-search-menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </button>
+    </section>
+    <!-- End Section Heading Search -->
+
+    <!-- Section Content -->
+    <section class="section-content">
+        <div class="section-content-header">
+            <div class="section-content-header-title">
+                My page
+            </div>
+            <div class="section-content-header-contextual">
+                <p>Add:</p>
+                <select id="contextual-option">
+                    <option></option>
+                    <option disabled value="issues-assigned-to-me">Issues assigned to me</option>
+                    <option disabled value="reported-issues">Reported issues</option>
+                    <option value="updated-issues">Updated issues</option>
+                    <option value="watched-issues">Watched issues</option>
+                    <option value="issues">Issues</option>
+                    <option value="lasted-new">Lasted new</option>
+                    <option value="calendar">Calendar</option>
+                    <option value="documents">Documents</option>
+                    <option value="spent-time">Spent time</option>
+                    <option value="activity">Activity</option>
+                </select>
+            </div>
+        </div>
+        <div class="section-content-my-issues">
+            <div class="section-content-my-issues-left">
+                <span class="section-content-my-issues-title">
+                    <a href="#!">Issues assigned to me</a>
+                    (0)
+                </span>
+                <div class="section-content-my-issues-list">
+                    <div class="section-content-my-issues-no-data">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        <p>No data to display</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-content-my-issues-right">
+                <span class="section-content-my-issues-title">
+                    <a href="#!">Reported issues</a>
+                    (2)
+                </span>
+                <div class="section-content-my-issues-list">
+                    <div class="section-content-my-issues-table">
+                        <table>
+                            <thead>
+                                <tr class="section-content-my-issues-table-header">
+                                    <th><input type="checkbox" id="checkbox-all"></th>
+                                    <th class="text-end">#</th>
+                                    <th class="text-center">Project</th>
+                                    <th class="d-none d-md-block">Tracker</th>
+                                    <th>Status</th>
+                                    <th>Subject</th>
+                                    <th class="d-none d-md-block"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="section-content-my-issues-table-content">
+                                    <td><input type="checkbox" class="issue-checkbox"  value=""></td>
+                                    <td class="section-content-my-issues-table-content-tag">
+                                        <i class="fa-light fa-hashtag"></i>
+                                        <p title="#16080">16080</p>
+                                    </td>
+                                    <td><a href="#!" class="text-center">SKG.Support Center</a></td>
+                                    <td class="d-none d-md-table-cell">REQ</td>
+                                    <td>New</td>
+                                    <td class="section-content-my-issues-table-content-project">
+                                        <a href="#!" title="[Orange] Yêu cầu hỗ trợ thêm 1 thanh RAM">
+                                            [Orange] Yêu cầu hỗ trợ thêm 1 thanh RAM
+                                        </a>
+                                    </td>
+                                    <td class="d-none d-md-table-cell">
+                                        <a href="#!">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr class="section-content-my-issues-table-content">
+                                    <td><input type="checkbox" class="issue-checkbox"  value=""></td>
+                                    <td class="section-content-my-issues-table-content-tag">
+                                        <i class="fa-light fa-hashtag"></i>
+                                        <p title="#160809">160809</p>
+                                    </td>
+                                    <td>
+                                        <a href="#!" class="text-center">SKG.Support Center</a>
+                                    </td>
+                                    <td class="d-none d-md-table-cell">REQ</td>
+                                    <td>New</td>
+                                    <td class="section-content-my-issues-table-content-project">
+                                        <a href="#!" title="[Orange] Yêu cầu hỗ trợ thêm 1 thanh RAM">[Orange] Yêu cầu
+                                            hỗ trợ thêm 1 thanh RAM</a>
+                                    </td>
+                                    <td class="d-none d-md-table-cell">
+                                        <a href="#!">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Section Create Home Page Content -->
+
+    <!-- Section Footer -->
+    <section class="section-footer">
+        <p class="section-footer-information">
+            Powered by
+            <a href="#!">
+                Bitnami Redmine Stack
+            </a>
+            © 2006-2021 Jean-Philippe Lang
+        </p>
+    </section>
+    <!-- End Section Footer -->
     <script src="bootstrap-5.3.0-alpha2-dist/js/bootstrap.bundle.js"></script>
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="js/custom.js"></script>
 </body>
 </html>
